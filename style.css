@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap");
+
+
+:root{
+    --main-color: linear-gradient(to left, #0a0a23, #1a0f34);
+    --black-color: #252525;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+    --reverse_linear_title: linear-gradient(to left, #0e1725, #2c1137);
+}
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: none;
+    transition: .2s ease;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--main-color);
+
+}
+
+section{
+    padding: 3.5rem 7%;
+    scroll-margin-top: 9rem;
+}
+
+img{
+    width: 100%;
+    object-fit: contain;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30px;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: #1a0f34;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.heading{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.box{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem 2rem;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: var(--border);
+}
+
+.search-input{
+    font-size: 1.6rem;
+    color: var(--black-color);
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
+}
+
+::-webkit-scrollbar{
+    height: 0.5rem;
+    width: 1rem;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #0e172555;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color: #0e182862;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #041e47;
+}
+
+/* ------------------------------------------HEADER SECTION */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--reverse_linear_title);
+    padding: 0 7%;
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 9rem;
+}
+
+
+.header .logo {
+    font-size:4em;
+    color: #fff;
+}
+
+.header .logo img{
+    height: 4rem;
+    margin-top: 15px;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 2rem;
+    color:  rgb(225, 225, 225);
+    border-bottom: 3px solid transparent;
+    font-family:"Work Sans";
+    padding: 2em 1em 1.5em 1em
+
+}
+
+.header .navbar a.active,
+.header .navbar a:hover{
+    border-color: var(--main-color);
+    padding-bottom:.5rem ;
+    transition: 0.3s ease-in-out;
+}
+
+.header #menu-btn{
+    display: none;
+}
+/* ------------------------------------------HEADER SECTION */
+
+
+/* ------------------------------------------HOME SECTION */
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  background: transparent;
+  z-index: -2;
+  height: 100vh;
+}
+
+/* Make the images invisible by default */
+
+.title {
+    /* background-color: green; */
+    margin-top: 55px;
+    font-size: 10rem;
+    font-family: poppins;
+    color: white;
+  }
+  
+  .title span {
+    font-size: 4rem;
+    color: rgb(233, 233, 233);
+  }
+  
+  .q-buttons {
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sub-title {
+    font-size: 1.2rem;
+    font-family: "Tw Cen MT Condensed Extra Bold";
+    color: var(--sub_title_color);
+    margin-top: 0.5em;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+  }
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+.div-head{
+    margin: 50px;
+    padding: 3.5rem 7%;
+    scroll-margin-top: 9rem;
+    }
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Float three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 10px 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: center;
+  background-color:var(--black-color);
+  transition: 0.3s;
+
+}
+
+.card:hover {
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card-img{
+  height: 400px;
+  width: 95%;
+}
+
+
+.home{
+    min-height: 106vh;
+    background-image: url("./image/backgrounf-2.png");
+    background-size: cover;
+    background-position: center;
+    margin-top: -134px;
+    display: flex;
+    align-items: center;
+}
+
+.home .content{
+    max-width: 100rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #fff;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+/* ------------------------------------------HOME SECTION */
+
+/* ------------------------------------------MENU SECTION */
+/* img .box-container ve .box  genel olarak düzenlendi */
+
+.menu .box-container .menu-category{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.menu .box-container .box h3{
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    text-decoration: line-through;
+    font-size: 1.5rem;
+}
+/* ------------------------------------------MENU SECTION */
+
+
+/* ------------------------------------------PRODUCTS SECTION */
+.products .box-container .box .box-head{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    z-index: 10;
+}
+
+.products .box-container .box-head .name{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: start;
+    overflow-wrap: anywhere;
+}
+
+.products .box-container .box .box-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products .box-container .box .box-bottom .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.products .box-container .box-bottom .info .price{
+    font-size: 3rem;
+}
+.products .box-container .box-bottom .info .amount{
+    font-size: 1.5rem;
+}
+
+.products .box-container  .box-bottom .product-btn a{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 0.2rem solid var(--main-color);
+}
+
+.products .box-container  .box-bottom .product-btn a i{
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+
+/* ------------------------------------------PRODUCTS SECTION */
+
+/* ------------------------------------------ABOUT US SECTION */
+.about-container {
+    font-family: Poppins;
+    width: 100%;
+    margin-top: 6em;
+  }
+  
+.about-background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+
+.emp-cards {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+.emp-card {
+  margin-top: -30em;
+  position: relative;
+  width: 23%;
+  transition: 0.3s ease-in-out;
+}
+
+.emp-card-info {
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.emp-card-info-name {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 0.5em;
+}
+
+.emp-card-info-title {
+  font-size: 1rem;
+  color: wheat;
+}
+
+.emp-image {
+  position: absolute;
+  width: 95%;
+  height: 400px;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.emp-image:hover {
+  transform: translateY(5.5em);
+}
+/* ------------------------------------------ABOUT US SECTION */
+/* ------------------------------------------REVIEW SECTION */
+/* img .box-container ve .box  genel olarak düzenlendi */
+
+.review .box-container .box img{
+    height: 20rem;
+    object-fit: contain ;
+}
+.review .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    object-fit: contain;
+}
+
+.review .box-container .box .h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.review .box-container .box .stars{
+    font-size: 1.5rem;
+    color: gold;
+}
+/* ------------------------------------------REVIEW SECTION */
+
+/* ------------------------------------------CONTACT SECTION */
+.contact .row{
+    display: flex;
+    background-color: var(--black-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .row .map{
+    flex: 1 1 45px;
+    width: 100%;
+    object-fit: cover;
+}
+.contact .row form{
+    flex: 1 1 45px;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: var(--border);
+}
+
+.contact .row form .inputBox i{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background-color: transparent;
+}
+
+.contact .row form .btn{
+    color: var(--main-color);
+    background-color: #fff;
+    font-weight: bold;
+}
+/* ------------------------------------------CONTACT SECTION */
+
+/* ------------------------------------------BLOG SECTION */
+.blog .box-container .box-full{
+    background-color: #fff;
+    border-radius: 3rem;
+}
+
+.blog .box-container .box-full .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+.blog .box-container .box-full:hover .image img{
+    transform: scale(1.2);
+}
+
+.blog .box-container .box-full .content{
+    padding: 2rem;
+}
+
+
+.blog .box-container .box-full .content span{
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.blog .box-container .box-full .content p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}
+/* ------------------------------------------BLOG SECTION */
+
+/* ------------------------------------------FOOTER SECTION */
+.footer {
+    background-color: var(--black-color);
+    text-align: center;
+}
+
+.footer .search{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .search .search-input{
+    width: 30rem;
+}
+
+.footer .search .btn-primary{
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+}
+
+.footer .share{
+    padding: 2rem 0;
+}
+
+.footer .share a{
+    color: #fff;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border: var(--border);
+    border-radius: 50%;
+    margin: 0.3rem;
+}
+
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer .links a{
+    background-color: var(--main-color);
+     padding: 0.7rem 2rem;
+     color: #fff;
+     border: var(--border);
+}
+
+.footer .links a:hover{
+    background-color: var(--black-color);
+    opacity: 0.7;
+    
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 300;
+    padding-top: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+}
+/* ------------------------------------------FOOTER SECTION */
+
+/* ------------------------------------------RESPONSIVE SECTION */
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    .header .logo img{
+        height: 7rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+    .products .box-container .box .box-head .name{
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 768px){
+    .header #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        background-color: #fff;
+        height: calc(100vh - 9rem);
+        width: 30rem;
+        box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+        right: -100%;
+    }
+    .header .navbar.active{
+        right: 3rem;
+    }
+    .header .navbar a{
+        color: var(--black-color);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+}
+
+
+
+
+
+
+/* ------------------------------------------RESPONSIVE SECTION */
