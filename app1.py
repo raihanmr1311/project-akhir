@@ -30,11 +30,13 @@ def index():
     else:
         return render_template("index.html")
 
-@app.route('/about', methods=['GET', 'POST'])
+@app.route('/home', methods=['GET', 'POST'])
 def cool_form():
     if request.method == 'POST':
-        return redirect(url_for("index"))
+            return redirect(url_for("index.html"))
     return render_template("about.html")
+
+
 
 if __name__ == "__main__":
     app.run()
