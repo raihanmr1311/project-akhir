@@ -26,7 +26,7 @@ def index():
     if request.method == 'POST':
         if request.form.get('Start') == 'Start':
             d_dtcn()
-            return render_template("index.html")
+            # return render_template("index.html")
     else:
         return render_template("index.html")
 
