@@ -1,5 +1,4 @@
 numpy==1.23.5
-cmake==3.25.0
 dlib==19.24.0
 imutils==0.5.1
 opencv_python==4.6.0.66
