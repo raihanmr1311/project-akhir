@@ -8,7 +8,7 @@ import dlib
 import cv2
 from playsound import playsound
 
-EYE_ASPECT_RATIO_THRESHOLD = 0.17
+EYE_ASPECT_RATIO_THRESHOLD = 0.2
 
 EYE_ASPECT_RATIO_CONSEC_FRAMES = 60
 
